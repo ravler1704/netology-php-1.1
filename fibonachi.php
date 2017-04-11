@@ -1,0 +1,41 @@
+<h1>Числа Фибоначчи</h1>
+<?php
+Error_reporting(E_ALL);
+
+
+$u = rand (0, 100);
+$x = 1;
+$y = 1;
+$z = "не задано";
+	
+for ($i=0; $i=100; $i++) {
+	if ($x > $u) {
+		echo "Задуманное число НЕ входит в числовой ряд";
+	break;
+	}
+	if ($x == $u) {
+		echo "Задуманное число входит в числовой ряд";
+	break;
+	}
+	else {
+	$z=$x;
+	$x=$x+$y;
+	$y=$z;
+	}
+}
+echo "</br>";
+echo "</br>";
+echo "<h3>Дополнительные сведения:</h3>";
+echo "Задуманное число ".$u." - ".gettype ($u);
+echo "</br>";
+echo "x = ".$x." - ".gettype ($x);
+echo "</br>";
+echo "y = ".$y." - ".gettype ($y);
+echo "</br>";
+echo "z = ".$z." - ".gettype ($z);
+
+?>
+
+
+
+	
