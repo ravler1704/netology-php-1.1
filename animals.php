@@ -31,4 +31,26 @@ foreach ($continents as $continent_name => $continent) {
 		}
 }
 
+
+echo "<h1>ТЕСТ</h1>";
+
+foreach ($continents as $continent_name => $continent) {
+	echo "<h2>{$continent_name}</h2>";
+		foreach ($continent as $animals) {
+			
+				$animals_explode = explode(" ", $animals);//разделяем строку $animals на массив $animals_explode
+				$counter = count($animals_explode);//считаем сколько элементов в массиве $animals_explode
+				//echo $counter;
+				if ($counter == 2) {//если 2 элемента
+				$animals_explode_impode = implode(" ", $animals_explode);//объединяем их в строку
+				var_dump ($animals_explode_impode);//получаем 3 строки
+				
+				}
+				
+				
+			
+		}
+}
+
+
 ?>
