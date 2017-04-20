@@ -18,7 +18,7 @@ echo "<img src=http://openweathermap.org/img/w/".$weather["list"]["0"]["weather"
 ?>
 </td>
 <td>
-&nbsp&nbsp&nbsp&nbsp
+&nbsp;&nbsp;&nbsp;&nbsp;
 </td>
 <td>
 <?php
